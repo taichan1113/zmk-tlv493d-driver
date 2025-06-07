@@ -7,7 +7,7 @@ include: base.yaml
 
 properties:
   reg:
-    type: int
+    type: array
     required: true
     description: I2C address of the sensor
   
