@@ -10,10 +10,6 @@ static struct k_timer tlv493d_timer;
 static void tlv493d_timer_handler(struct k_timer *timer) {
     tlv493d_read_data(device_get_binding("TLV493D"), &sensor_data);
     process_sensor_data(&sensor_data);  // 切り分けたデータ処理関数を呼び出す
-    // printk("TLV493D Data: RX=%d, RY=%d, RZ=%d, X=%d, Y=%d, Z=%d\n",
-        //    tlv493d_convert_to_mT(sensor_data.rx), tlv493d_convert_to_mT(sensor_data.ry), tlv493d_convert_to_mT(sensor_data.rz),
-        //    tlv493d_convert_to_mT(sensor_data.x), tlv493d_convert_to_mT(sensor_data.y), tlv493d_convert_to_mT(sensor_data.z));
-
 }
 
 int tlv493d_init(const struct device *dev) {

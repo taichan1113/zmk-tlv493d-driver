@@ -1,5 +1,5 @@
 #include <zephyr/sys/util.h>
-#include <zephyr/input/input-event-codes.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <zmk/event_manager.h>
 #include <zmk/input_listener.h>
 
