@@ -2,8 +2,8 @@ description: Infineon TLV493D 3D magnetic sensor driver
 
 compatible: "infineon,tlv493d"
 
-# include: i2c-device.yaml
-include: base.yaml
+include: i2c-device.yaml
+# include: base.yaml
 
 properties:
   reg:

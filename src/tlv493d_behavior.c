@@ -1,7 +1,8 @@
 #include <zephyr/sys/util.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <zmk/event_manager.h>
-#include <zmk/input_listener.h>
+#include <zmk/input.h>
+// #include <zmk/input_listener.h>
 
 #include "../include/tlv493d_behavior.h"
 
