@@ -1,0 +1,17 @@
+description: Infineon TLV493D 3D magnetic sensor driver
+
+compatible: "infineon,tlv493d"
+
+# include: i2c-device.yaml
+include: base.yaml
+
+properties:
+  reg:
+    type: int
+    required: true
+    description: I2C address of the sensor
+  
+  # polling-interval-ms:
+  #   type: int
+  #   default: 10
+  #   description: Polling interval in milliseconds

@@ -1,0 +1,22 @@
+
+# menuconfig TLV493D
+#     bool "TLV493D magnetic sensor"
+#     depends on I2C
+#   # select I2C 
+#     help
+#       Enable TLV493D magnetic sensor.
+
+
+menuconfig TLV493D
+    bool "Infineon TLV493D 3D Magnetic Sensor"
+    depends on I2C
+    help
+      Enable support for the Infineon TLV493D 3D Magnetic Sensor.
+
+config TLV493D_POLL_RATE_MS
+    int "Polling rate (ms)"
+    depends on TLV493D
+    default 100
+    range 10 1000
+    help
+      Defines the interval (in milliseconds) for polling TLV493D sensor data.

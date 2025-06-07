@@ -1,0 +1,7 @@
+{
+  "idf.pythonInstallPath": "C:\\Users\\takec\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "files.associations": {
+    "*.csv": "csv (whitespace)",
+    "tlv493d.h": "c"
+  }
+}
