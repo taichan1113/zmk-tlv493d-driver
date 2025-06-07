@@ -16,7 +16,7 @@ static void tlv493d_timer_handler(struct k_timer *timer) {
 
 }
 
-static int tlv493d_init(const struct device *dev) {
+int tlv493d_init(const struct device *dev) {
     struct tlv493d_data *data = dev->data;
     data->i2c_dev = device_get_binding(DT_LABEL(DT_NODELABEL(i2c0)));
 
